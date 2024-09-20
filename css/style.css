@@ -19,7 +19,7 @@
     
     width: 100%;
     height: 100vh;
-    background-image: url(/images/uni-hall.jpg);
+    background-image:url(images/uni-hall.jpg);
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -1079,13 +1079,13 @@ footer .copy-right span{
     footer p{
 
         width: 90%;
-        font-size: 14px;
+        font-size: 12px;
     }
 
     footer h2{
 
 
-        font-size: 20px;
+        font-size: 18px;
     }
 
     footer .icons i{
@@ -1097,6 +1097,23 @@ footer .copy-right span{
     footer .copy-right {
 
         font-size: 14px;
+    }
+
+    footer hr{
+
+        
+        margin-top: 20px
+    }
+
+    footer p{
+
+        padding-bottom: 20px
+    }
+
+    footer{
+
+        padding-top: 25px;
+        
     }
 
     
