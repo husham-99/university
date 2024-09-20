@@ -1,0 +1,1688 @@
+
+*{
+
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    list-style-type: none;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.container{
+
+    width: 80%;
+    margin: auto;
+}
+
+.header{
+    
+    width: 100%;
+    height: 100vh;
+    background-image: url(/images/uni-hall.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+nav{
+
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    padding: 15px 50px;
+    text-transform: uppercase;
+    z-index: 999;
+}
+
+
+nav a img{
+
+    width: 70px;
+    min-height: 70px;
+    border-radius: 50%;
+    transition: all 0.7s ease-in-out;
+    z-index: 5;
+    position: relative;
+
+}
+
+nav a img:hover{
+
+    transform: rotate(360deg);
+}
+
+.header .nav-link{
+
+    flex: 1;
+    text-align: right;
+    margin-top: 20px;
+   
+}
+
+.header .nav-link li{
+
+    display: inline-block;
+    margin-left: 30px;
+    cursor: pointer;
+    
+    
+}
+
+
+.header .nav-link li a{
+
+    color: white;
+    font-size: 14px;
+}
+
+.header .nav-link li::after{
+
+    content: "";
+    width: 0;
+    height: 3px;
+    margin: auto;
+    display: block;
+    background-color: blueviolet;
+    transition: all 0.4s ease-in-out;
+    position: relative;
+    top: 3px
+}
+
+.header .nav-link li:hover::after{
+
+    width: 100%;
+}
+
+.header .text{
+
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    text-align: center;
+    color: wheat;
+    width: 100%;
+}
+
+.header .text h1{
+
+    font-size: 40px;
+}
+
+.header .text p{
+
+    margin: 30px auto;
+    font-size: 20px;
+    width: 80%;
+    line-height: 1.6;
+    
+
+}
+
+.header .text a{
+    display: inline-block;
+    font-size: 16px;
+    background-color: wheat;
+    padding: 10px 30px;
+    color: blueviolet;
+    border-radius: 6px;
+    font-weight: bold;
+    transition: all 0.7s ease-in-out;
+
+
+}
+
+.header .text a:hover{
+
+    background-color: rgba(255, 255, 255, 0.61);
+    color: blue;
+}
+
+.links-container{
+
+    width: 100%;
+}
+
+.header-overlay{
+
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 0;
+}
+
+.header-about .header-overlay{
+
+    height: 50vh;
+}
+
+.header nav .icon{
+    
+    
+    display: none;
+    
+}
+
+nav .close{
+
+    font-size: 20px ;
+    padding: 5px 7px;
+    background-color: red;
+    color: wheat;
+    font-weight: bold;
+    border-bottom-right-radius: 4px ;
+    display: none;
+}
+
+
+
+@media (max-width: 700px){
+
+    
+    
+    .header .text{
+
+        width: 90%;
+    }
+
+    .header .text h1{
+
+        font-size: 20px;
+        
+    }
+
+    .header .text p{
+
+        font-size: 16px;
+        width: 80%;
+        margin: 15px auto;
+        
+        
+        
+    }
+
+    .header .text a{
+
+        font-size: 14px;
+        margin-top: 20px;
+        padding: 7px 10px;
+    }
+
+    nav a img{
+
+        width: 60px;
+        min-height: 60px;
+        border-radius: 50%;
+        
+    
+    }
+
+    nav{
+
+        padding-left: 20px;
+    }
+
+    .header .nav-link{
+
+        display: none;
+    }
+
+    .header .nav-link.open{
+        position: absolute;
+        top: 0;
+        right: 0;
+        width: 200px;
+        height: 100vh;
+        background-color: rgb(89, 60, 116);
+        margin: 0;
+        padding: 0;
+        text-align: left;
+        z-index: 2;
+        display: block;
+        transition: all 0.5s ease-in-out;
+        
+        
+        
+               
+    }
+
+    .header .nav-link.open li:hover::after{
+
+        width: 0;
+    }
+
+
+    .header .nav-link.open ul li{
+
+        margin: 30px 0;
+        padding: 5px 5px;
+        display: block;
+        border-bottom: 1px solid rgba(39, 36, 36, 0.418);
+        border-top: 1px solid rgb(39, 36, 36, 0.418);
+        
+        
+        
+    }
+
+    .header .nav-link.open ul li a{
+
+        font-size: 12px;
+    }
+
+    
+
+    .header nav .icon{
+
+
+        display: inline-block;
+        position: absolute;
+        top: 27px;
+        right: 30px;
+        padding: 5px;
+        font-size: 25px;
+        color: wheat;
+        border: 2px solid wheat;
+        border-radius: 6px;
+        
+        
+        
+    }
+
+    
+
+
+    nav .close{
+
+        display: inline-block;
+        position: relative;
+        cursor: pointer;
+    }
+    
+
+}
+
+
+@media screen and (min-width: 701px) and (max-width: 1200px){
+
+    .header .nav-link li{
+
+        margin-left: 12px;
+    }
+
+    .header .nav-link li a{
+
+        font-size: 12px;
+    }
+
+    .header .text h1{
+
+        font-size: 35px;
+        
+        
+    }
+
+    .header .text p{
+
+        font-size: 18px;
+        width: 60%;
+    }
+
+    .header .text a{
+
+        font-size: 14px;
+        padding: 5px 15px
+    }
+
+    .header .text{
+
+        width: 100%;
+    }
+
+}
+
+
+
+/**************************end landing page *********************************************/
+
+
+/****************************start course page *****************************************/
+
+
+.courses-section{
+
+padding-top: 60px ;
+padding-bottom: 60px;
+    
+}
+.courses-section h1{
+
+    text-align: center;
+    color: blueviolet;
+    font-size: 40px;
+    font-weight: 200;
+
+}
+
+.courses-section > p{
+
+    text-align: center;
+    margin-top: 15px;
+    color: #777;
+    
+}
+
+.courses-section .course-item{
+
+    display: flex;
+    justify-content: space-between;
+    margin-top: 50px;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+   
+    
+    
+    
+}
+
+.course-item .course{
+    width: 300px;
+    background-color: rgba(83, 188, 241, 0.4);
+    padding: 30px 15px;
+    text-align: center;
+    border-radius: 4px;
+    margin: auto;
+    cursor: pointer;
+    transition: all 0.4s ease-in-out;
+
+}
+
+
+
+.course-item .course:hover{
+
+    box-shadow: 0 0 20px 0 rgb(0,106,255);
+}
+
+
+
+
+.course-item p{
+
+    margin-top: 20px;
+    color: #777;
+    line-height: 2;
+}
+
+
+
+
+@media (max-width: 700px){
+
+    
+    .courses-section h1{
+
+        font-size: 25px;
+    }
+
+    .courses-section p{
+
+        font-size: 14px;
+        line-height: 1.6;
+    }
+
+    
+    .course-item .course{
+
+        margin-bottom: 20px;
+        width: 350px;
+    
+    }
+
+
+
+    
+
+}
+
+
+@media (min-width: 701px){
+
+    .course-item .course{
+
+        width: 250px;
+        margin-bottom: 20px;
+    }
+
+    .courses-section .course-item{
+
+        gap: 30px
+    }
+
+}
+
+
+/****************************end course page *****************************************/
+
+
+
+/****************************start compus section *****************************************/
+
+.compus-section{
+
+    padding-top: 60px;
+    padding-bottom: 60px;
+    background-color: #eee;
+}
+
+.compus-section h1{
+
+    text-align: center;
+    color: blueviolet;
+    font-size: 40px;
+    font-weight: 200;
+}
+
+.compus-section p{
+
+    text-align: center;
+    margin-top: 15px;
+    color: #777;
+
+
+}
+
+
+
+.compus-section .compus-item{
+
+
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin-top: 50px;
+    
+}
+
+.compus-item .compus{
+
+    width: 250px;
+    margin: auto;
+    padding: 10px;
+    background-color: white;
+    border-radius: 4px;
+    cursor: pointer;
+    position: relative;
+
+}
+
+.compus-item .compus img{
+
+    width: 100%;
+    border-radius: 4px;
+    
+
+}
+
+.compus-item .compus::after{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height:0;
+    background-color: rgba(0, 0, 0, 0.3);
+    border-radius: 4px;
+    transition: all 0.5s ease-in-out;
+    
+
+}
+
+
+.compus-item .compus:hover::after{
+    
+    height: 100%;
+
+
+}
+
+.compus-item .compus .hidden{
+
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    font-weight: bold;
+    color: black;
+    opacity: 0;
+    transition: all 0.5s ease-in-out;
+    font-size: 20px;
+}
+
+.compus-item .compus:hover .hidden{
+
+    opacity: 1;
+    bottom: 50%;
+}
+
+
+
+
+
+@media (max-width: 700px){
+
+    
+    .compus-section h1{
+
+        font-size: 25px;
+    }
+
+    .compus-section p{
+
+        font-size: 14px;
+        line-height: 1.6;
+        
+
+    }
+
+    
+    .compus-item .compus{
+
+        margin-bottom: 20px;
+        width: 350px;
+        
+    
+    }
+
+    .compus-section .compus-item{
+
+        gap: 30px
+    }
+
+    
+
+}
+
+@media screen and (min-width: 701px) and (max-width: 1000px ){
+
+    .compus-item .compus{
+
+        width: 250px;
+        margin-bottom: 20px;
+
+    }
+
+    .compus-section .compus-item{
+
+        gap: 30px
+    }
+
+}
+
+
+
+
+
+
+/****************************end compus section *****************************************/
+
+
+
+/*********************************start feature *****************************************/
+
+.feature-section{
+
+    padding-top: 60px;
+    padding-bottom: 60px;
+}
+
+.feature-section h1{
+
+    text-align: center;
+    color: blueviolet;
+    font-size: 40px;
+    font-weight: 200;
+
+}
+
+.feature-section  p{
+
+    text-align: center;
+    margin-top: 15px;
+    color: #777;
+    line-height: 1.6;
+
+}
+
+.feature-section .feature-item{
+    margin-top: 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 20px;
+    text-align: center;
+
+}
+
+.feature-item .feature{
+
+    width: 300px;
+    overflow: hidden;
+    margin: auto;
+}
+
+.feature-item .feature img{
+
+    width: 100%;
+    margin-bottom: 20px;
+    border-radius: 4px;
+}
+
+
+
+@media (max-width: 700px){
+
+    .feature-section h1{
+
+        font-size: 25px;
+    }
+
+
+    .feature-item .feature{
+        
+        gap: 20px;
+        padding: 20px;
+        background-color: #eee;
+        min-width: 250px;
+        margin: auto;
+        
+    }
+
+    .feature-section  p{
+
+        font-size: 14px;
+    }
+
+}
+
+
+@media screen and (min-width: 701px) and (max-width: 1174px){
+
+    .feature-item .feature{
+
+        width: 70%;
+        padding: 20px;
+        background-color: #eee;
+        margin-bottom: 15px;
+    }
+
+}
+
+
+
+
+
+/***********************************end feature *****************************************/
+
+
+/***********************************start our student *****************************************/
+
+.student-section{
+
+    padding-top: 60px;
+    padding-bottom: 60px;
+    background-color: #eee;
+}
+
+.student-section h1{
+
+    text-align: center;
+    color: blueviolet;
+    font-size: 40px;
+    font-weight: 200;
+
+}
+
+.student-section p{
+
+    text-align: center;
+    margin-top: 15px;
+    color: #777;
+    line-height: 1.6;
+
+}
+
+.student-section .student-item{
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 20px;
+    margin-top: 50px;
+}
+
+.student-item .student{
+
+    width: 360px;
+    background-color: white;
+    position: relative;
+    padding: 15px 20px;
+    border-radius: 4px;
+    margin: auto;
+    
+}
+
+.student-item .student p,
+.student-item .student h3
+{
+
+
+    padding-left: 100px;
+    text-align: left;
+    margin: 0;
+}
+
+.student-item .student span i{
+
+    color: #77777771;
+    
+}
+
+.student-item .student span{
+    display: block;
+    padding-left: 100px;
+    margin-top: 10px;
+}
+
+.student-item .student .star1 i{
+
+    
+    color: orange;
+}
+
+.student-item .student .star2 i:not(:last-of-type){
+
+    color: orange
+}
+
+.student-item .student .star3 i:not(:nth-of-type(4), :nth-of-type(5)){
+
+    color: orange
+}
+
+.student-item .student img{
+
+    width: 60px;
+    height: 80px;
+    position: absolute;
+    top: 15px;
+    left: 30px;
+    border-radius: 50%;
+    border: 3px solid #eee;
+}
+
+
+@media (max-width: 700px){
+
+    .student-section .student-item{
+
+
+        gap: 30px;
+    }
+
+    .student-item .student{
+
+
+        min-width: 250px;
+    }
+
+    .student-section h1{
+
+        font-size: 25px;
+    }
+
+    .student-section p{
+
+        font-size: 14px;
+    }
+    
+}
+
+@media screen and (min-width: 701px) and (max-width: 1399px){
+
+    .student-section .student-item{
+
+        flex-direction: column;
+        gap: 30px;
+        
+    }
+
+    .student-item .student{
+        
+        
+        width: 80%;
+       
+    }
+
+}
+
+
+
+
+
+/***********************************end our student *****************************************/
+
+
+
+/***********************************start enroll ********************************************/
+
+.enroll-section{
+
+    padding-top: 60px;
+    padding-bottom: 60px;
+}
+
+.enroll-section .enroll{
+
+    width: 100%;
+    position: relative;
+    text-align: center;
+    
+    
+}
+
+.enroll-section .enroll img{
+
+    width: 100%;
+    height: 450px;
+}
+
+.enroll-section .enroll .overlay{
+
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    width: 95%;
+}
+
+.enroll-section .black{
+
+    position: absolute;
+    top:0;
+    left:0;
+    height: 100%;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.4);
+}
+
+.enroll-section .enroll h1{
+
+    color: wheat;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+.enroll-section .enroll a{
+
+    display: inline-block;
+    margin-top: 30px;
+    font-size: 18px;
+    padding: 10px 15px;
+    background-color: blueviolet;
+    border-radius: 4px;
+    color: white;
+    border: 0;
+    transition: 0.5s ease-in-out;
+    cursor: pointer;
+}
+
+.enroll-section .enroll a:hover{
+
+    background-color: blue;
+}
+
+
+
+@media (max-width:700px){
+
+    .enroll .overlay h1{
+
+        font-size: 18px;
+        line-height: 1.6;
+    }
+
+    .enroll .overlay a{
+
+        font-size: 14px;
+        margin-top: 20px ;
+
+
+    }
+
+}
+
+@media screen and (min-width:701px) and (max-width:1000px){
+
+    .enroll .overlay h1{
+
+        font-size: 20px;
+    }
+
+    .enroll .overlay a{
+
+        font-size: 16px;
+    }
+
+}
+
+
+
+
+
+
+/***********************************end enroll *********************************************/
+
+
+
+/***********************************start footer *********************************************/
+
+footer{
+
+    padding-top: 35px;
+    text-align: center;
+    background-color: rgb(51, 23, 25);
+}
+
+
+footer h2{
+
+    color: #777;
+    margin-bottom: 10px;
+
+}
+
+footer p{
+
+    padding-bottom: 30px;
+    width: 50%;
+    margin: 0 auto;
+    line-height: 1.6;
+    color: #777;
+}
+
+footer .icons i{
+
+    padding: 0 15px;
+    font-size: 20px;
+}
+
+
+
+footer .icons i:nth-child(1){
+
+    color: #1877f2;
+}
+
+footer .icons i:nth-child(2){
+
+    color: #1da1f2;
+}
+
+
+footer .icons i:nth-child(3){
+
+    color: #ff0000;
+}
+
+footer .icons i:nth-child(4){
+
+    color: blue;
+}
+
+
+footer hr{
+
+    border: 1px solid rgb(61, 29, 31);
+    margin-top: 30px
+}
+
+footer .copy-right{
+
+    font-size: 14px;
+    margin-top: 10px;
+    padding-bottom: 10px;
+}
+
+footer .copy-right span{
+
+    color:#1877f2
+}
+
+
+@media (max-width: 850px){
+
+    footer p{
+
+        width: 90%;
+        font-size: 14px;
+    }
+
+    footer h2{
+
+
+        font-size: 20px;
+    }
+
+    footer .icons i{
+
+
+        font-size: 16px;
+    }
+
+    footer .copy-right {
+
+        font-size: 14px;
+    }
+
+    
+
+}
+
+
+
+/***********************************end footer *********************************************/
+
+
+
+/***********************************start about.html *********************************************/
+
+.header-about{
+
+    width: 100%;
+    height: 50vh;
+    background-image: url(/images/graduate.jpg);
+    background-position-y:-350px;
+    background-size: cover;
+    position: relative;
+
+}
+
+.header-about .nav-link li::after{
+
+    background-color: wheat;
+}
+
+.header-about .text h1{
+
+    font-size: 30px;
+    
+}
+
+
+.about-section{
+
+    padding-top: 60px;
+    padding-bottom: 60px;
+}
+
+.about-section .about-item{
+
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 20px
+
+}
+
+.about-section .about-item .info{
+
+    width: 550px;
+    background-color: #eee;
+    padding: 20px;
+    
+}
+
+.about-section .about-item .info-img{
+
+    width: 550px;
+   
+    
+}
+
+
+
+.about-section .about-item .info-img img{
+
+    max-width: 100%;
+}
+
+.about-section .about-item .info h2{
+
+    color: blueviolet;
+    margin-bottom: 15px;
+}
+
+.about-section .about-item .info p{
+
+    color: #777;
+    margin-bottom: 40px;
+    line-height: 1.6;
+    text-align: justify;
+}
+
+.about-section .about-item .info a{
+    display: inline-block;
+    padding: 10px 15px;
+    border: 1px solid blueviolet;
+    border-radius: 6px;
+    margin-bottom: 15px ;
+    transition: 0.5s ease-in-out;
+}
+
+.about-section .about-item .info a:hover{
+
+    background-color: blueviolet;
+    color: white
+}
+
+@media(max-width: 799px){
+
+    
+    .header-about .text h1{
+
+        font-size: 20px;
+    }
+    
+    .about-section .about-item .info h2{
+
+        font-size: 16px;
+    }
+
+    .about-section .about-item .info a{
+
+        font-size: 13px;
+    }
+    
+    
+    .about-section .about-item .info{
+
+        margin: 0 auto;
+        
+        
+    }
+
+    
+
+    .about-section .about-item .info-img{
+
+        margin: 0 auto;
+        
+    }
+
+    .header-about{
+
+        background-position-y: -150px;
+    }
+
+}
+
+
+
+@media screen and (min-width: 800px) and (max-width:1150px){
+
+    
+    .about-section .about-item{
+
+        width: 100%;
+        
+        
+    }
+    
+    
+    .about-section .about-item .info{
+
+        margin: 0 auto;
+        flex-grow: 1;
+        
+        
+        
+        
+    }
+
+    .about-section .about-item .info-img{
+
+        margin: 0 auto;
+        flex-grow: 1;
+        
+    }
+
+    .about-section .about-item .info-img img{
+
+        width: 100%;
+        
+    }
+
+    
+
+
+}
+
+@media screen and (min-width: 1151px) and (max-width: 1416px){
+
+    .about-section .about-item .info{
+
+        width: 400px;
+        flex-grow: 1;
+        
+        
+        
+        
+    }
+
+    .about-section .about-item .info-img{
+
+        width: 400px;
+        flex-grow: 1;
+        
+    }
+
+
+}
+
+
+
+/***********************************end about.html *********************************************/
+
+
+/***********************************start blogs.html *********************************************/
+
+.blog-section{
+
+    padding-top: 60px;
+    padding-bottom: 60px;
+}
+
+.blog-item{
+
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 40px;
+}
+
+.blog-img{
+
+    flex-basis: 65%;
+    margin: 0 auto;
+}
+
+.blog-img img{
+
+    width: 100%;
+}
+
+.blog-img h2{
+
+    margin: 15px 0;
+    color: blueviolet;
+}
+
+.blog-img p{
+
+    margin-bottom: 20px;
+    color:#777;
+    text-align: justify; 
+}
+
+
+.blog-item .blog-info{
+    flex-basis: 30%;
+    margin: 0 auto;
+    
+    
+}
+
+.blog-info h3{
+
+    padding: 10px;
+    background-color: blueviolet;
+    text-align: center;
+    color: white;
+    margin-bottom: 15px;
+}
+
+.blog-info div{
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+    padding: 10px 0;
+    
+}
+
+.blog-img form{
+
+    padding: 20px;
+    background-color: #eee;
+}
+
+.blog-item form h3{
+
+    margin-bottom: 15px;
+}
+
+.blog-img form input,
+.blog-img textarea{
+    display: block;
+    width: 100%;
+    margin-bottom: 10px;
+    border: 0;
+    outline: 0;
+}
+
+.blog-img form input::placeholder,
+.blog-img textarea::placeholder{
+
+    font-size: 12px;
+}
+
+.blog-img form input{
+
+    height: 40px;
+    padding: 10px;
+}
+
+.blog-img form textarea{
+
+    height: 200px;
+    resize: none;
+    padding: 10px;
+}
+
+.blog-img form input:focus::-webkit-input-placeholder,
+.blog-img form textarea:focus::-webkit-input-placeholder{
+
+
+    opacity: 0;
+    transition: 0.5s ease-in-out;
+}
+
+.blog-img form button{
+
+    padding: 10px 15px;
+    border: 0;
+    background-color: blueviolet;
+    color: white;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-top: 10px;
+    transition: 0.5s ease-in-out;
+
+}
+
+.blog-img form button:hover{
+
+    background-color: blue;
+    
+}
+
+
+
+@media (max-width: 999px){
+
+    .header-about .text h1{
+
+        font-size: 18px;
+    }
+    .blog-img{
+
+        flex-basis: 100%;
+    }
+
+    .blog-item .blog-info{
+
+        flex-basis: 100%;
+        width: 100%
+        
+    }
+
+    .blog-img h2{
+
+        font-size: 18px;
+    }
+
+    .blog-img p{
+
+        font-size: 14px;
+    }
+
+
+    .blog-img form h3{
+
+        font-size: 15px;
+    }
+
+    .blog-img form{
+
+        padding: 10px;
+    }
+
+    .blog-img form input{
+
+        height: 30px;
+    }
+
+    .blog-img form textarea{
+
+        height: 150px;
+    }
+
+    .blog-img form input::placeholder,
+    .blog-img form textarea::placeholder{
+
+
+        font-size: 10px;
+    }
+
+    .blog-img form button{
+
+        padding: 7px 10px;
+        font-size: 12px;
+    }
+
+    .blog-item .blog-info h3{
+
+        font-size: 16px;
+        padding: 7px;
+    }
+
+    .blog-item .blog-info span{
+
+        font-size: 13px;
+    }
+
+
+
+}
+
+
+
+
+
+
+
+/***********************************end blogs.html *********************************************/
+
+
+/***********************************start contact.html *********************************************/
+
+.contact-section{
+
+    padding-top: 60px ;
+    padding-bottom: 60px;
+}
+
+.contact-section iframe{
+
+    margin: auto;
+    display: block;
+    width: 100%;
+    height: 300px;
+}
+
+.contact-item{
+
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin-top: 80px;
+    gap: 20px
+}
+
+.contact-item .right{
+
+    flex-basis: 50%;
+    
+}
+
+.contact-item .left{
+    flex-basis: 45%;
+    position: relative;
+    
+}
+
+.contact-item .left .info{
+
+    margin-left: 80px;
+    
+}
+
+.contact-item .left .info p{
+
+    color: #777;
+    margin-top: 5px;
+    font-size: 15px;
+}
+
+
+.contact-item .left .info:not(:last-of-type){
+
+    margin-bottom: 50px;
+}
+
+.contact-item .left .icon i.fa-home{
+    position: absolute;
+    top: 13px;
+    color: red;
+    font-size: 20px;
+}
+
+.contact-item .left .icon i.fa-phone{
+    position: absolute;
+    top: 110px;
+    color: rgb(46, 87, 139);
+    font-size: 20px;
+
+}
+
+.contact-item .left .icon i.fa-envelope{
+    position: absolute;
+    top: 205px;
+    color: blueviolet;
+    font-size: 20px;
+}
+
+.contact-item .right h3{
+
+    margin-bottom: 15px;
+}
+
+@media (max-width: 1000px){
+
+    .contact-item .right{
+
+        flex-basis: 100%
+    }
+
+    .contact-item .left{
+
+        flex-basis: 100%;
+        
+    }
+
+    .contact-item .left h3{
+
+
+        font-size: 14px;
+    }
+
+    .contact-item .left .info p{
+
+        font-size: 12px;
+    }
+
+    .contact-item .left .icon i.fa-home{
+
+        font-size:16px;
+    }
+
+    .contact-item .left .icon i.fa-phone{
+
+        font-size: 16px;
+    }
+
+    .contact-item .left .icon i.fa-envelope{
+
+        font-size: 16px;
+        top: 194px
+    }
+
+    .contact-item .left .info{
+
+        margin-bottom:40px;
+    }
+
+    .contact-item .right form h3{
+
+        margin-bottom: 15px;
+        font-size: 15px;
+    }
+
+
+    
+
+}
+
+@media screen and (min-width: 418px) and (max-width: 1000px){
+
+    .contact-item .left .icon i.fa-home{
+
+        top: 9px
+    }
+
+    .contact-item .left .icon i.fa-phone{
+
+        top: 95px
+    }
+
+    .contact-item .left .icon i.fa-envelope{
+
+        font-size: 16px;
+        top: 180px
+    }
+}
+
+
+
+/***********************************end contact.html *********************************************/
