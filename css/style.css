@@ -23,8 +23,9 @@
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-    position: relative;
-    z-index: 999;
+    background-attachment: fixed;
+    
+    
     
     
 }
@@ -159,7 +160,7 @@ nav a img:hover{
     width: 100%;
     height: 100vh;
     background-color: rgba(0, 0, 0, 0.3);
-    z-index: 0;
+    
 }
 
 .header-about .header-overlay{
@@ -1138,6 +1139,7 @@ footer .copy-right span{
     background-image: url(../images/graduate.jpg);
     background-position-y:-350px;
     background-size: cover;
+    background-attachment: fixed;
     position: relative;
 
 }
