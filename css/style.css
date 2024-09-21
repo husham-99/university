@@ -24,6 +24,8 @@
     background-position: center;
     background-repeat: no-repeat;
     background-attachment: fixed;
+    display: block;
+    z-index: 0;
     
     
     
@@ -37,7 +39,7 @@ nav{
     width: 100%;
     padding: 15px 50px;
     text-transform: uppercase;
-    z-index: 999;
+    z-index: 1000;
 }
 
 
@@ -111,6 +113,7 @@ nav a img:hover{
     text-align: center;
     color: wheat;
     width: 100%;
+    z-index: 900;
 }
 
 .header .text h1{
@@ -150,6 +153,7 @@ nav a img:hover{
 .links-container{
 
     width: 100%;
+    z-index: 1000;
 }
 
 
@@ -243,6 +247,8 @@ nav .close{
         z-index: 2;
         display: block;
         transition: all 0.5s ease-in-out;
+        z-index: 1000;
+        
         
         
         
