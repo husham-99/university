@@ -24,8 +24,7 @@
     background-position: center;
     background-repeat: no-repeat;
     background-attachment: fixed;
-    position: relative;
-    z-index: 1000;
+    
     
 }
 
@@ -158,7 +157,7 @@ nav a img:hover{
     left: 0;
     width: 100%;
     height: 100vh;
-    background-color: rgba(0, 0, 0, 0.5);
+    background-color: rgba(0, 0, 0, 0.3);
     z-index: 0;
 }
 
@@ -287,8 +286,8 @@ nav .close{
 
         display: inline-block;
         position: absolute;
-        top: 27px;
-        right: 30px;
+        top: 23px;
+        right: 20px;
         padding: 5px;
         font-size: 30px;
         color: wheat;
@@ -943,18 +942,15 @@ padding-bottom: 60px;
     margin-top: 30px;
     font-size: 18px;
     padding: 10px 15px;
-    background-color: blueviolet;
+    background-color: wheat;
     border-radius: 4px;
-    color: white;
+    color: blueviolet;
     border: 0;
     transition: 0.5s ease-in-out;
     cursor: pointer;
 }
 
-.enroll-section .enroll a:hover{
 
-    background-color: blue;
-}
 
 
 
@@ -1138,7 +1134,7 @@ footer .copy-right span{
 
     width: 100%;
     height: 50vh;
-    background-image: url(/images/graduate.jpg);
+    background-image: url(../images/graduate.jpg);
     background-position-y:-350px;
     background-size: cover;
     position: relative;
@@ -1384,7 +1380,7 @@ footer .copy-right span{
 .blog-info h3{
 
     padding: 10px;
-    background-color: blueviolet;
+    background-color: rgb(72, 48, 95);
     text-align: center;
     color: white;
     margin-bottom: 15px;
@@ -1451,7 +1447,7 @@ footer .copy-right span{
 
     padding: 10px 15px;
     border: 0;
-    background-color: blueviolet;
+    background-color: rgb(72, 48, 95);
     color: white;
     border-radius: 4px;
     cursor: pointer;
